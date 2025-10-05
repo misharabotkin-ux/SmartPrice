@@ -1,3 +1,9 @@
-fastapi
-uvicorn
-sentence-transformers
+fastapi==0.118.0
+uvicorn[standard]==0.30.6
+
+# Лёгкая и стабильная версия sentence-transformers
+sentence-transformers==2.2.2
+
+# CPU-версия torch (без CUDA) — сильно облегчает память и размер
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.1+cpu
